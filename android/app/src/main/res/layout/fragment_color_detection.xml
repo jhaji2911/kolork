@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.ColorDetectionFragment">
+
+        <FrameLayout
+            android:id="@+id/activity_color_picker_preview_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="#808080">
+
+            <View
+                android:id="@+id/activity_color_picker_pointer_ring"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:background="@drawable/pointer_ring" />
+
+            <View
+                android:id="@+id/activity_main_pointer"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:background="@drawable/pointer" />
+
+        </FrameLayout>
+
+
+
+        <View
+            android:id="@+id/activity_color_picker_animated_preview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/oval_white"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtColorName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="start|top"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtHexCode"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textColor="@color/black_shadow"
+            android:layout_gravity="end|bottom"
+            android:gravity="center" />
+    </FrameLayout>
+</layout>
