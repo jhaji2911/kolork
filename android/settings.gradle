@@ -1,6 +1,8 @@
 rootProject.name='kolorkNative'
 apply from: '../node_modules/react-native-unimodules/gradle.groovy';
 includeUnimodulesProjects()
+include ':lottie-react-native'
+project(':lottie-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/lottie-react-native/src/android')
 
 include ':@unimodules_react-native-adapter'
 project(':@unimodules_react-native-adapter').projectDir = new File(rootProject.projectDir, '../node_modules/@unimodules/react-native-adapter/android')

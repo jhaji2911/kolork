@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "662355918769",
+    "project_id": "kolork-cd24e",
+    "storage_bucket": "kolork-cd24e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662355918769:android:2c368d77d67a063e018790",
+        "android_client_info": {
+          "package_name": "com.app.kolork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662355918769-gdfpgjd4mvip8gj853vdkvg10cqo4rrb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEl_KICBPzCMlxUTGRxdQPkbS18yOtyxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662355918769-gdfpgjd4mvip8gj853vdkvg10cqo4rrb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

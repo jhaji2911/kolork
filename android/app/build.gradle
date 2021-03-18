@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 apply from: '../../node_modules/react-native-unimodules/gradle.groovy'
 android {
     compileSdkVersion 29
@@ -9,7 +10,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.apkzube.blindvision"
+        applicationId "com.app.kolork"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -33,6 +34,7 @@ android {
     }
 }
 
+addUnimodulesDependencies()
 
 project.ext.react = [
 //        entryFile: "index.js" ,
@@ -56,7 +58,6 @@ dependencies {
     }
     else { implementation jscFlavor }
     
-    addUnimodulesDependencies()
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'
@@ -69,7 +70,7 @@ dependencies {
     debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.flipper'
     }
-
+    implementation project(':lottie-react-native')
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
